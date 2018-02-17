@@ -1,0 +1,160 @@
+/* GLOBAL */
+body{
+    font-family: "Verdana";
+    font-size: 1.5rem;
+    margin:0;
+    padding:0;
+}
+.hero-name{
+
+}
+.z-ind{
+    z-index: -999;
+}
+.hero-img{
+
+}
+.name-bg{
+    z-index: 100;
+    float: left;
+    margin-top: -120px;
+    padding-left:70px;
+    padding-top:40px;
+    background: linear-gradient(45deg, rgba(100,100,100,0.9), rgba(255,255,255,0.1));
+}
+
+.hero-name{
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.8rem;
+}
+.standout{
+    font-size: 5.5rem;
+    font-weight:bold;
+    line-height: 3.9rem;
+    text-transform: uppercase;
+    margin-top: 3%;
+    margin-left: -8%;
+}
+.coloration{
+    color: #ff0066;
+}
+
+@media screen and (min-width: 768px) {
+    .standout {
+        font-size: 7.5rem;
+        line-height: 4.9rem;
+        margin-left: -6%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .standout {
+        font-size: 9.5rem;
+        line-height: 6.7rem;
+        margin-left: -5%;
+    }
+}
+@media screen and (min-width: 1199px) {
+    .standout {
+        font-size: 10rem;
+        line-height: 7rem;
+        margin-left: -8%;
+    }
+}
+.darker{
+    background-color: #333;
+}
+.langs{
+    margin-top: 115px;
+    padding-left: 5;
+    color: #8c8c8c;
+    text-transform: uppercase;
+}
+
+.brace{
+    color: #8c8c8c;
+    font-size: 20rem;
+    padding-right: 10%;  
+    padding-bottom: 5%;
+}
+
+.braceleft{
+    margin-left:8%; 
+}
+
+@media screen and (min-width: 768px) {
+    .braceleft {
+        margin-left:12%; 
+    }
+}
+
+
+.braceright{
+    box-shadow: 25px 0px 50px rgba(0, 0, 0, 0.2);
+    padding-right:20%;
+}
+.about{
+    padding-left:10%;
+}
+.about-me{
+    color: #8c8c8c;
+    padding-top: 20%;
+}
+.about-text{
+    color: #8c8c8c;
+    padding-top:10%;
+    margin-left: -20%;
+}
+.social-links{
+    text-decoration: none;
+    margin-top: 15%;
+    font-weight:bold;
+}
+.social-link-item{
+    display: inline-block;
+    width:3rem;
+    height:3rem;
+    padding-left:5%;
+    padding-top:3%;
+    border: 3px solid #ff0066;
+    border-radius: 50%;
+
+}
+
+li.social-link-item:hover{
+    border: 3px solid #ddd;
+}
+
+a.social-link{
+    color: #ff0066;
+    
+}
+a.social-link:hover{
+    text-decoration: none;
+    color: #ddd;
+}
+
+
+.contact-logo{
+
+}
+.plain-white{
+    z-index: 100;
+    background-color: #fff;
+}
+.about{
+    font-size:1rem;
+}
+.form-intro{
+    font-size:1rem;
+    font-weight:bold;
+}
+.contact-asterisk{
+    font-size: 0.8rem;
+    color: #aaa;
+}
+.credits{
+    font-size: 0.7rem;
+    font-weight:bold;
+    color: #aaa;  
+}

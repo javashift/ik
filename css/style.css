@@ -145,35 +145,41 @@ body{
         margin-left: -10%;
     }
 }
-
-
-.social-links{
-    text-decoration: none;
-    margin-top: 9%;
-    font-weight:bold;
-}
 .social-link-item{
     display: inline-block;
-    width:50px;
-    height:50px;
-
-    border: 3px solid #ff0066;
+    width:60px;
+    height:60px;
+    border: 3px solid #555;
     border-radius: 50%;
-
+    background-size: 80%;
+    background-position: center;
+    margin: 5% 0 5% 0;
+}
+.sli-first{
+    background-image: url("../images/git.png");
+}
+.sli-first:hover{
+    background-image: url("../images/git_hover.png");
+}
+.sli-second{
+    background-image: url("../images/fbook.png");
+}
+.sli-second:hover{
+    background-image: url("../images/fbook_hover.png");
+}
+.sli-third{
+    background-image: url("../images/behance.png");
+}
+.sli-third:hover{
+    background-image: url("../images/behance_hover.png");
 }
 
-li.social-link-item:hover{
-    border: 3px solid #ddd;
-}
-
-a.social-link{
-    color: #ff0066;
-    
-}
-a.social-link:hover{
+a.social-link-item:hover{
     text-decoration: none;
-    color: #ddd;
+    border: 3px solid #ff0066;
 }
+
+
 /* -------- GALLERY -------- */
 .section{
     text-transform: uppercase;

@@ -73,7 +73,6 @@ body{
 }
 .langs{
     margin-top: 115px;
-    padding-left: 5;
     color: #8c8c8c;
     text-transform: uppercase;
 }
@@ -84,21 +83,24 @@ body{
     padding-bottom: 5%;
 }
 
-.braceleft{
+ /* .braceleft{
     margin-left:8%; 
-}
+} 
 
 @media screen and (min-width: 768px) {
     .braceleft {
         margin-left:12%; 
     }
-}
+}  */
 .br{
-    background-color: #ff0066;
+    background-color: #333;
     float: right;
 }
 .gr{
-    background-color: aqua;
+    background-color: #111;
+}
+.grad{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1))
 }
 .braceright{
     box-shadow: 0px 0px 0px;
@@ -190,10 +192,15 @@ a.social-link-item:hover{
 
 }
 .showcase{
- float: left;
- padding-left:0px;
- padding-bottom: 5px;
-
+    max-width:40%;
+    float: left;
+    padding-left:0px;
+    padding-bottom: 5px;
+}
+.showcase-intro{
+    font-size:1.2rem;
+    font-weight:bold;
+    color:#555;
 }
 .showcase-title{
     font-size: 1.4rem;
@@ -202,16 +209,19 @@ a.social-link-item:hover{
 }
 .showcase-description{
     font-size: 1.2rem;
-    line-height: 1.4rem;
-    
+    line-height: 1.4rem;   
+}
+.showcase-color{
+    color:#999;
 }
 
 /* -------- FOOTER -------- */
 
 .contact-logo{
-
+    opacity: 0.5;
 }
 .plain-white{
+    margin-top: -50px;
     z-index: 50;
     background-color: #fff;
     box-shadow: -25px 0px 45px rgba(0, 0, 0, 0.2);

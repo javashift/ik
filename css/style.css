@@ -1,10 +1,13 @@
 /* GLOBAL */
 body{
-    font-family: "Verdana";
+    font-family: 'Mukta Mahee', sans-serif;
     font-size: 1.5rem;
     margin:0;
     padding:0;
 }
+
+/* -------- HEADER -------- */
+
 .hero-name{
 
 }
@@ -15,18 +18,19 @@ body{
 
 }
 .name-bg{
-    z-index: 100;
+    z-index: 50;
     float: left;
     margin-top: -120px;
     padding-left:70px;
     padding-top:40px;
-    background: linear-gradient(45deg, rgba(100,100,100,0.9), rgba(255,255,255,0.1));
+    background: linear-gradient(45deg, rgba(50,50,50,0.9), rgba(255,255,255,0.1));
 }
 
 .hero-name{
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.8rem;
+    color: white;
 }
 .standout{
     font-size: 5.5rem;
@@ -50,19 +54,22 @@ body{
 @media screen and (min-width: 992px) {
     .standout {
         font-size: 9.5rem;
-        line-height: 6.7rem;
+        line-height: 6.3rem;
         margin-left: -5%;
     }
 }
 @media screen and (min-width: 1199px) {
     .standout {
         font-size: 10rem;
-        line-height: 7rem;
+        line-height: 6.5rem;
         margin-left: -8%;
     }
 }
+
+/* -------- ABOUT -------- */
+
 .darker{
-    background-color: #333;
+    background-color: #222;
 }
 .langs{
     margin-top: 115px;
@@ -74,7 +81,6 @@ body{
 .brace{
     color: #8c8c8c;
     font-size: 20rem;
-    padding-right: 10%;  
     padding-bottom: 5%;
 }
 
@@ -87,35 +93,70 @@ body{
         margin-left:12%; 
     }
 }
-
-
+.br{
+    background-color: #ff0066;
+    float: right;
+}
+.gr{
+    background-color: aqua;
+}
 .braceright{
-    box-shadow: 25px 0px 50px rgba(0, 0, 0, 0.2);
-    padding-right:20%;
+    box-shadow: 0px 0px 0px;
+
+}
+
+@media screen and (min-width: 1199px) {
+    .braceright{
+        box-shadow: 25px 0px 50px rgba(0, 0, 0, 0.2);
+    }
+
 }
 .about{
-    padding-left:10%;
+    padding-left:5%;
 }
 .about-me{
     color: #8c8c8c;
-    padding-top: 20%;
+    padding:0 0 0 10%;
+}
+
+@media screen and (min-width: 900px){
+    .about-me{
+        padding-left: 15%;
+    }
+}
+@media screen and (min-width: 1199px){
+    .about-me{
+        padding-top: 20%;
+    }
 }
 .about-text{
     color: #8c8c8c;
-    padding-top:10%;
-    margin-left: -20%;
+    padding:5% 10% 0 10%;
+
 }
+@media screen and (min-width: 900px){
+    .about-text{
+        padding:5% 15% 0 15%;
+    }
+}
+@media screen and (min-width: 1199px){
+    .about-text{
+        padding-top:5%;
+        margin-left: -10%;
+    }
+}
+
+
 .social-links{
     text-decoration: none;
-    margin-top: 15%;
+    margin-top: 9%;
     font-weight:bold;
 }
 .social-link-item{
     display: inline-block;
-    width:3rem;
-    height:3rem;
-    padding-left:5%;
-    padding-top:3%;
+    width:50px;
+    height:50px;
+
     border: 3px solid #ff0066;
     border-radius: 50%;
 
@@ -133,27 +174,70 @@ a.social-link:hover{
     text-decoration: none;
     color: #ddd;
 }
+/* -------- GALLERY -------- */
+.section{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    color:#555;
+    padding:10px 0px 0px 40px;
 
+}
+.showcase{
+ float: left;
+ padding-left:0px;
+ padding-bottom: 5px;
+
+}
+.showcase-title{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+}
+.showcase-description{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    
+}
+
+/* -------- FOOTER -------- */
 
 .contact-logo{
 
 }
 .plain-white{
-    z-index: 100;
+    z-index: 50;
     background-color: #fff;
+    box-shadow: -25px 0px 45px rgba(0, 0, 0, 0.2);
+}
+.input-group-text{
+    background-color: #222;
+    color: #ddd;
+    width:150px;
+}
+.first-field{
+
 }
 .about{
     font-size:1rem;
 }
 .form-intro{
-    font-size:1rem;
+    font-size:1.2rem;
     font-weight:bold;
+    color:#555;
 }
 .contact-asterisk{
     font-size: 0.8rem;
     color: #aaa;
 }
+.btn-pink{
+    background-color: #ff0066;
+    color: #fff;
+}
 .credits{
+    margin-top: 120px;
+}
+.credits-line{
     font-size: 0.7rem;
     font-weight:bold;
     color: #aaa;  

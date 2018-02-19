@@ -192,10 +192,23 @@ a.social-link-item:hover{
 
 }
 .showcase{
-    max-width:40%;
+    margin-top: 10px;
+}
+@media screen and (min-width:992px){
+    .showcase{
+        margin-top: 100px;
+    }
+}
+.showcase-item{
     float: left;
-    padding-left:0px;
-    padding-bottom: 5px;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+@media screen and (min-width:992px){
+    .showcase-item{
+        max-width:40%;
+        float: left;
+        padding:
+    }
 }
 .showcase-intro{
     font-size:1.2rem;
@@ -218,18 +231,47 @@ a.social-link-item:hover{
 /* -------- FOOTER -------- */
 
 .contact-logo{
-    opacity: 0.5;
+    opacity: 0.1;
+    position: relative;
+    left: 1px;
+   }
+.img-logo{
+    max-width: 170%;
 }
+
+@media screen and (min-width:991px){
+    .contact-logo{
+        position: relative;
+        left: 50px;
+       }
+}
+@media screen and (min-width:1199px){
+    .contact-logo{
+        position: relative;
+        left: 100px;
+       }
+}
+
 .plain-white{
     margin-top: -50px;
     z-index: 50;
     background-color: #fff;
-    box-shadow: -25px 0px 45px rgba(0, 0, 0, 0.2);
+    box-shadow: -25px 0px 55px rgba(50, 50, 50, 0.2);
 }
 .input-group-text{
     background-color: #222;
     color: #ddd;
-    width:150px;
+    width:100px;
+}
+@media screen and (min-width:768px){
+    .input-group-text{
+        width:150px;
+    }
+}
+@media screen and (min-width:1199px){
+    .input-group-text{
+        width:200px;
+    }
 }
 .first-field{
 

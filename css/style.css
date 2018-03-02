@@ -11,20 +11,32 @@ body{
 .hero-name{
 
 }
+.main-brand{
+    padding-left: 10%;
+}
+a.navbar-brand{
+    color:#333;
+}
 .z-ind{
     z-index: -999;
 }
 .hero-img{
-
+z-index:1;
 }
 .name-bg{
     z-index: 50;
     float: left;
     margin-top: -120px;
-    padding-left:70px;
-    padding-top:40px;
+    padding: 2rem 0 1rem 10%;
     background: linear-gradient(45deg, rgba(50,50,50,0.9), rgba(255,255,255,0.1));
 }
+
+@media screen and (min-width:768px){
+    .name-bg{
+        padding: 2rem 0 1rem 14%;
+    }
+}
+
 
 .hero-name{
     font-weight: bold;
@@ -37,7 +49,7 @@ body{
     font-weight:bold;
     line-height: 3.9rem;
     text-transform: uppercase;
-    margin-top: 3%;
+    margin-top: 10%;
     margin-left: -8%;
 }
 .coloration{
@@ -62,15 +74,12 @@ body{
     .standout {
         font-size: 10rem;
         line-height: 6.5rem;
-        margin-left: -8%;
+        margin-left: -4%;
     }
 }
 
 /* -------- ABOUT -------- */
 
-.darker{
-    background-color: #222;
-}
 .langs{
     margin-top: 115px;
     color: #8c8c8c;
@@ -83,7 +92,7 @@ body{
     padding-bottom: 5%;
 }
 
- /* .braceleft{
+ .braceleft{
     margin-left:8%; 
 } 
 
@@ -91,7 +100,7 @@ body{
     .braceleft {
         margin-left:12%; 
     }
-}  */
+}  
 .br{
     background-color: #333;
     float: right;
@@ -99,18 +108,15 @@ body{
 .gr{
     background-color: #111;
 }
-.grad{
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1))
-}
-.braceright{
+
+/* .braceright{
     box-shadow: 0px 0px 0px;
+} */
 
-}
-
-@media screen and (min-width: 1199px) {
+ @media screen and (min-width: 1199px) {
     .braceright{
-        box-shadow: 25px 0px 50px rgba(0, 0, 0, 0.2);
-    }
+        box-shadow: 42px 20px 129px -75px rgba(138,138,138,0.59);
+    } 
 
 }
 .about{
@@ -151,7 +157,7 @@ body{
     display: inline-block;
     width:60px;
     height:60px;
-    border: 3px solid #555;
+    border: 3px solid #8c8c8c;
     border-radius: 50%;
     background-size: 80%;
     background-position: center;
@@ -188,7 +194,7 @@ a.social-link-item:hover{
     font-size: 2rem;
     font-weight: bold;
     color:#555;
-    padding:10px 0px 0px 40px;
+    padding:3rem 0 0 7rem;
 
 }
 .showcase{
@@ -196,18 +202,21 @@ a.social-link-item:hover{
 }
 @media screen and (min-width:992px){
     .showcase{
-        margin-top: 100px;
+        margin-top: 140px;
     }
 }
 .showcase-item{
+    width:100%;
     float: left;
-    padding: 0 0.5rem 0.5rem 0.5rem;
+    padding: 0;
 }
-@media screen and (min-width:992px){
+.showcase-item:hover{
+    background-color: #333;
+}
+@media screen and (min-width:1199px){
     .showcase-item{
-        max-width:40%;
-        float: left;
-        padding:
+        width:95%;
+        padding:0;
     }
 }
 .showcase-intro{
@@ -228,35 +237,40 @@ a.social-link-item:hover{
     color:#999;
 }
 
-/* -------- FOOTER -------- */
-
+/* -------- CONTACT -------- */
+.section-contact{
+    margin-top:110px;
+}
 .contact-logo{
-    opacity: 0.1;
-    position: relative;
-    left: 1px;
+    opacity: 0.2;
    }
 .img-logo{
-    max-width: 170%;
+
 }
 
 @media screen and (min-width:991px){
     .contact-logo{
         position: relative;
-        left: 50px;
+        left: 100px;
        }
+    .img-logo{
+        max-width: 150%;
+    }
 }
 @media screen and (min-width:1199px){
     .contact-logo{
         position: relative;
-        left: 100px;
+        left: 150px;
        }
+    .img-logo{
+        max-width: 130%;
+    }
 }
 
 .plain-white{
     margin-top: -50px;
-    z-index: 50;
     background-color: #fff;
-    box-shadow: -25px 0px 55px rgba(50, 50, 50, 0.2);
+    box-shadow: -88px 67px 275px -24px rgba(138,138,138,0.4);
 }
 .input-group-text{
     background-color: #222;
@@ -272,6 +286,10 @@ a.social-link-item:hover{
     .input-group-text{
         width:200px;
     }
+}
+
+.contact-leftpad{
+
 }
 .first-field{
 

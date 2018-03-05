@@ -1,9 +1,16 @@
 /* GLOBAL */
 body{
-    font-family: 'Mukta Mahee', sans-serif;
+    font-family: 'Cuprum', sans-serif; 
     font-size: 1.5rem;
     margin:0;
     padding:0;
+}
+
+.font-sec{
+    font-family: "Open sans condensed", sans-serif;
+}
+.font-acc{
+    font-family: "Ubuntu", sans-serif;
 }
 
 /* -------- HEADER -------- */
@@ -13,15 +20,16 @@ body{
 }
 .main-brand{
     padding-left: 10%;
+    font-size: 1.5rem;
 }
 a.navbar-brand{
     color:#333;
 }
 .z-ind{
-    z-index: -999;
+
 }
 .hero-img{
-z-index:1;
+
 }
 .name-bg{
     z-index: 50;
@@ -46,11 +54,11 @@ z-index:1;
 }
 .standout{
     font-size: 5.5rem;
-    font-weight:bold;
+    font-weight: 700;
     line-height: 3.9rem;
     text-transform: uppercase;
-    margin-top: 10%;
-    margin-left: -8%;
+    margin-top: 7%;
+    margin-left: -6%;
 }
 .coloration{
     color: #ff0066;
@@ -60,7 +68,7 @@ z-index:1;
     .standout {
         font-size: 7.5rem;
         line-height: 4.9rem;
-        margin-left: -6%;
+        margin-left: -5%;
     }
 }
 @media screen and (min-width: 992px) {
@@ -109,22 +117,20 @@ z-index:1;
     background-color: #111;
 }
 
-/* .braceright{
-    box-shadow: 0px 0px 0px;
-} */
-
- @media screen and (min-width: 1199px) {
+ /* @media screen and (min-width: 1199px) {
     .braceright{
-        box-shadow: 42px 20px 129px -75px rgba(138,138,138,0.59);
-    } 
+        box-shadow: 42px 20px 129px -85px rgba(50,50,50,0.59);
+    }  */
 
 }
 .about{
     padding-left:5%;
+    /* background-color: #111; */
 }
 .about-me{
     color: #8c8c8c;
     padding:0 0 0 10%;
+    font-weight:700;
 }
 
 @media screen and (min-width: 900px){
@@ -140,7 +146,7 @@ z-index:1;
 .about-text{
     color: #8c8c8c;
     padding:5% 10% 0 10%;
-
+    font-size: 1.2rem;
 }
 @media screen and (min-width: 900px){
     .about-text{
@@ -149,9 +155,10 @@ z-index:1;
 }
 @media screen and (min-width: 1199px){
     .about-text{
-        padding-top:5%;
-        margin-left: -10%;
     }
+}
+.social-links{
+    margin-left: 10%;
 }
 .social-link-item{
     display: inline-block;
@@ -162,40 +169,49 @@ z-index:1;
     background-size: 80%;
     background-position: center;
     margin: 5% 0 5% 0;
+    
 }
 .sli-first{
     background-image: url("../images/git.png");
+    transition: box-shadow 0.7s;
 }
 .sli-first:hover{
     background-image: url("../images/git_hover.png");
+    box-shadow: 5px 5px 10px rgba(255,0,102, 0.9);
 }
 .sli-second{
     background-image: url("../images/fbook.png");
+    transition: box-shadow 0.7s;
 }
 .sli-second:hover{
     background-image: url("../images/fbook_hover.png");
+    box-shadow: 5px 5px 10px rgba(255,0,102, 0.9);
 }
 .sli-third{
     background-image: url("../images/behance.png");
+    transition: box-shadow 0.7s;
 }
 .sli-third:hover{
     background-image: url("../images/behance_hover.png");
+    box-shadow: 5px 5px 10px rgba(255,0,102, 0.9);
 }
 
 a.social-link-item:hover{
     text-decoration: none;
-    border: 3px solid #ff0066;
+    border: 3px solid #8c8c8c;
 }
 
 
 /* -------- GALLERY -------- */
 .section{
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     color:#555;
     padding:3rem 0 0 7rem;
-
+}
+.gallery-slider{
+    padding: 0;
 }
 .showcase{
     width: 100%;
@@ -210,17 +226,18 @@ a.social-link-item:hover{
     }
 }
 .showcase-item{
-background-color: #ff0066;
+background-color: rgba(50,50,50,0.3);
 width:300px;
 height:600px;
 }
 .showcase-item:hover{
-    background-color: #333;
+    background-color: #ff0066;
 }
 @media screen and (min-width:1199px){
     .showcase-item{
         width:95%;
         padding:0;
+        height:750px;
     }
 }
 .showcase-intro{
@@ -243,7 +260,7 @@ height:600px;
 
 /* -------- CONTACT -------- */
 .section-contact{
-
+    margin-top:10%;
 }
 .contact-logo{
     opacity: 0.2;
@@ -253,9 +270,9 @@ height:600px;
 }
 
 .plain-white{
-    margin-top: -50px;
+
     background-color: #fff;
-     box-shadow: -88px 67px 275px -64px rgba(138,138,138,0.3); 
+    /* box-shadow: -88px 67px 275px -64px rgba(50,50,50,0.3);  */
 }
 .input-group-text{
     background-color: #222;
@@ -283,9 +300,10 @@ height:600px;
     font-size:1rem;
 }
 .form-intro{
-    font-size:1.2rem;
-    font-weight:bold;
+    font-size:1.4rem;
+    font-weight:;
     color:#555;
+
 }
 .contact-asterisk{
     font-size: 0.8rem;

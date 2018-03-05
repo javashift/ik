@@ -117,10 +117,10 @@ a.navbar-brand{
     background-color: #111;
 }
 
- /* @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1199px) {
     .braceright{
         box-shadow: 42px 20px 129px -85px rgba(50,50,50,0.59);
-    }  */
+    }  
 
 }
 .about{
@@ -128,7 +128,7 @@ a.navbar-brand{
     /* background-color: #111; */
 }
 .about-me{
-    color: #8c8c8c;
+    color: #777;
     padding:0 0 0 10%;
     font-weight:700;
 }

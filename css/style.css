@@ -88,6 +88,14 @@ a.navbar-brand{
 
 /* -------- ABOUT -------- */
 
+button{
+    background: none;
+    border: none;
+    text-transform: uppercase;
+}
+button:focus{
+    outline: none;
+}
 .langs{
     margin-top: 115px;
     color: #8c8c8c;
@@ -140,21 +148,24 @@ a.navbar-brand{
 }
 @media screen and (min-width: 1199px){
     .about-me{
-        padding-top: 20%;
+        padding:20% 0 0 10%;
     }
 }
 .about-text{
     color: #8c8c8c;
     padding:5% 10% 0 10%;
     font-size: 1.2rem;
+    letter-spacing: 0.1rem;
 }
 @media screen and (min-width: 900px){
     .about-text{
         padding:5% 15% 0 15%;
+        margin: 0 -10% 0 0;
     }
 }
 @media screen and (min-width: 1199px){
     .about-text{
+        padding:5% 15% 0 10%;
     }
 }
 .social-links{
@@ -164,36 +175,36 @@ a.navbar-brand{
     display: inline-block;
     width:60px;
     height:60px;
-    border: 3px solid #8c8c8c;
+    border: 1px solid #8c8c8c;
     border-radius: 50%;
     background-size: 80%;
     background-position: center;
     margin: 5% 0 5% 0;
     
 }
+.sli{
+    transition: box-shadow 0.3s;
+}
+.sli:hover{
+    box-shadow: 5px 5px 10px rgba(255,0,102, 0.9);
+}
 .sli-first{
     background-image: url("../images/git.png");
-    transition: box-shadow 0.7s;
 }
 .sli-first:hover{
     background-image: url("../images/git_hover.png");
-    box-shadow: 5px 5px 10px rgba(255,0,102, 0.9);
 }
 .sli-second{
     background-image: url("../images/fbook.png");
-    transition: box-shadow 0.7s;
 }
 .sli-second:hover{
     background-image: url("../images/fbook_hover.png");
-    box-shadow: 5px 5px 10px rgba(255,0,102, 0.9);
 }
 .sli-third{
     background-image: url("../images/behance.png");
-    transition: box-shadow 0.7s;
 }
 .sli-third:hover{
     background-image: url("../images/behance_hover.png");
-    box-shadow: 5px 5px 10px rgba(255,0,102, 0.9);
 }
 
 a.social-link-item:hover{
@@ -260,17 +271,33 @@ height:600px;
 
 /* -------- CONTACT -------- */
 .section-contact{
-    margin-top:10%;
+    
 }
 .contact-logo{
-    opacity: 0.2;
+    /* opacity: 0.2; */
    }
-.img-logo{
-    width: 20%;
+/* .img-logo{
+    width: 5rem;
+    margin:10rem 0 0 9rem;
+}
+.greeting{
+    margin: 1rem 0 0 5.9rem;
+}
+@media screen and (min-width:1199px){
+    .img-logo{
+        width: 5rem;
+        margin: 10rem 0 0 10rem;
+    }
+    .greeting{
+        margin: 1rem 0 0 7rem;
+    }
+} */
+.greeting{
+    color: #777;
 }
 
 .plain-white{
-
+    margin: 3% 0 0 0;
     background-color: #fff;
     /* box-shadow: -88px 67px 275px -64px rgba(50,50,50,0.3);  */
 }
@@ -314,10 +341,11 @@ height:600px;
     color: #fff;
 }
 .credits{
-    margin-top: 120px;
+    margin-top: 5rem;
 }
 .credits-line{
+    margin: 2% 0 0 0;
     font-size: 0.7rem;
     font-weight:bold;
-    color: #aaa;  
+    color: #ccc;  
 }

@@ -20,6 +20,7 @@ body{
 }
 .main-brand{
     padding-left: 10%;
+    margin-top:-10px;
     font-size: 1.5rem;
 }
 a.navbar-brand{
@@ -184,9 +185,11 @@ button:focus{
 }
 .sli{
     transition: box-shadow 0.3s;
+    border-radius: 50%;
 }
 .sli:hover{
-    box-shadow: 5px 5px 10px rgba(255,0,102, 0.9);
+    box-shadow: 0px 0px 0px 10px rgba(255,0,102, 0.3);
+    border-radius: 50%;
 }
 .sli-first{
     background-image: url("../images/git.png");
@@ -244,6 +247,44 @@ height:600px;
 .showcase-item:hover{
     background-color: #ff0066;
 }
+
+.item1{
+    background-image: url(../images/eco-cha.jpg);
+}
+.item2{
+    background-image: url(../images/eco-cha.jpg);
+}
+.item3{
+    background-image: url(../images/eco-cha.jpg);
+}
+.item4{
+    background-image: url(../images/eco-cha.jpg);
+}
+.item5{
+    background-image: url(../images/eco-cha.jpg);
+}
+.item6{
+    background-image: url(../images/eco-cha.jpg);
+}
+.item1:hover{
+    background-image: url(../images/eco-cha-hover.jpg);
+}
+.item2:hover{
+    background-image: url(../images/eco-cha-hover.jpg);
+}
+.item3:hover{
+    background-image: url(../images/eco-cha-hover.jpg);
+}
+.item4:hover{
+    background-image: url(../images/eco-cha-hover.jpg);
+}
+.item5:hover{
+    background-image: url(../images/eco-cha-hover.jpg);
+}
+.item6:hover{
+    background-image: url(../images/eco-cha-hover.jpg);
+}
+
 @media screen and (min-width:1199px){
     .showcase-item{
         width:95%;
@@ -271,7 +312,7 @@ height:600px;
 
 /* -------- CONTACT -------- */
 .section-contact{
-    
+    margin-top: 50px;
 }
 .contact-logo{
     /* opacity: 0.2; */
@@ -339,6 +380,10 @@ height:600px;
 .btn-pink{
     background-color: #ff0066;
     color: #fff;
+    transition: box-shadow 0.3s;
+}
+.btn-pink:hover{
+    box-shadow: 0px 0px 0px 10px rgba(255,0,102, 0.3);
 }
 .credits{
     margin-top: 5rem;
